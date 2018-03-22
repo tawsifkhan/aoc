@@ -27,6 +27,6 @@ print(data.head())
 def max_min(row):
   return(int(max(row)-min(row)))
   
-output = (data.apply(max_min,axis = 1))
+output = data.apply(max_min,axis = 1)
 
-print(sum((output)))
+print(sum(output))
